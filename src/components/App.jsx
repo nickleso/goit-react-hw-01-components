@@ -1,22 +1,19 @@
+// import styled from 'styled-components';
+import { Box } from './Styles/Box';
 import { Profile } from './Profile/Profile';
-// import user from './DataJson/user.json';
 
 export const App = () => {
   return (
-    <>
+    <Box
+      // mr="auto"
+      // ml="auto"
+
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      as="main"
+    >
       <Profile />
-    </>
+    </Box>
   );
-  // <div
-  //   style={{
-  //     height: '100vh',
-  //     display: 'flex',
-  //     justifyContent: 'center',
-  //     alignItems: 'center',
-  //     fontSize: 40,
-  //     color: '#010101'
-  //   }}
-  // >
-  //   React homework template
-  // </div>
 };
