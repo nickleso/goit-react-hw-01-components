@@ -1,19 +1,19 @@
-// import styled from 'styled-components';
 import { Box } from './Styles/Box';
 import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
 
 export const App = () => {
   return (
     <Box
-      // mr="auto"
-      // ml="auto"
-
       display="flex"
+      flexWrap="wrap"
       justifyContent="center"
       alignItems="center"
+      gridGap={50}
       as="main"
     >
       <Profile />
+      <Statistics />
     </Box>
   );
 };

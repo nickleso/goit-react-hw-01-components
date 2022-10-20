@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { Box } from '../../Styles/Box';
 import PropTypes from 'prop-types';
 import { ProfileItem } from '../ProfileItem/ProfileItem';
 
