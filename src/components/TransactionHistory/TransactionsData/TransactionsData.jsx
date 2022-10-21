@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledDataRow = styled.td`
-  min-width: ${p => p.theme.space[8]}px;
+  min-width: 267px;
   padding-top: ${p => p.theme.space[4]}px;
   padding-bottom: ${p => p.theme.space[4]}px;
   text-align: center;
