@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const StyledTitle = styled.h2`
   text-align: center;
-  padding: ${p => p.theme.space[4]}px;
+  padding-top: ${p => p.theme.space[4]}px;
+  padding-bottom: ${p => p.theme.space[4]}px;
 `;
 
 export const StatisticsTitle = ({ title }) => {
