@@ -5,7 +5,7 @@ import { ProfileItem } from '../ProfileItem/ProfileItem';
 const StyledProfileList = styled.ul`
   display: flex;
   justify-content: space-around;
-  background: lightgray;
+  background: ${p => p.theme.colors.primary};
   padding-top: ${p => p.theme.space[4]}px;
   padding-bottom: ${p => p.theme.space[4]}px;
 `;

@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { userIsActive } from 'components/Utils/userIsActive';
 
 const StyledFriendsActivity = styled.span`
   display: block;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  border-radius: ${p => p.theme.radii.round};
+  width: ${p => p.theme.space[4]}px;
+  height: ${p => p.theme.space[4]}px;
 `;
 export const FriendsItem = ({ dataName, dataImg, dataIsActive }) => {
   return (
     <>
       <StyledFriendsActivity
         style={{
-          backgroundColor: userIsActive(dataIsActive),
+          backgroundColor: userIsActive(dataIsActive, 'green', 'red'),
         }}
       ></StyledFriendsActivity>
       <img src={dataImg} alt={dataName} width="68px" />
@@ -26,10 +27,3 @@ FriendsItem.propTypes = {
   dataImg: PropTypes.string.isRequired,
   dataIsActive: PropTypes.bool.isRequired,
 };
-
-function userIsActive(dataIsActive) {
-  if (dataIsActive) {
-    return 'green';
-  }
-  return 'red';
-}
